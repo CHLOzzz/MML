@@ -1,0 +1,8 @@
+---v2.0.0---
+Unofficial pre-release! 2 modules are provided in the plugin to get things running; the Square Root Quantizer (SQT QNT) and the Base 2 Logarithm Quantizer (LOG QNT).
+
+- All provided quantizers take a simple voltage input, and return a simple voltage output that maps notes on a chromatic musical scale and rearranges them into the shape of a mathematical function.
+- SQT QNT is the shape of the square root function.
+- LOG QNT is the shape of the base 2 logarithm function.
+
+7 are planned for release total in future updates - SQT, LOG, SIN, LIN, ATN, EQT, and POW.
