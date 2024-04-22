@@ -1,15 +1,15 @@
 {
   "slug": "MML",
   "name": "MML",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "GPL-3.0-or-later",
   "brand": "MML",
-  "author": "Chloe McCarthy & Robert Schneider",
-  "authorEmail": "cmccarth@mtu.edu,robertsc@mtu.edu",
+  "author": "Cody McCarthy & Michael Maxwell & Max Schneider & Josh Pfeffer & Robert Schneider & Andrew Sills",
+  "authorEmail": "cmccarth@mtu.edu & mmaxwell@mtu.edu & robertsc@mtu.edu & asills@georgiasouthern.edu",
   "authorUrl": "",
   "pluginUrl": "",
   "manualUrl": "",
-  "sourceUrl": "",
+  "sourceUrl": "https://github.com/CHLOzzz/MML/",
   "donateUrl": "",
   "changelogUrl": "",
   "modules": [
@@ -23,6 +23,12 @@
       "slug": "SqtQnt",
       "name": "SQT QNT",
       "description": "Quantize voltage on a square root scale.",
+      "tags": []
+    },
+    {
+      "slug": "PowQnt",
+      "name": "POW QNT",
+      "description": "Quantize voltage on a varying power scale.",
       "tags": []
     }
   ]

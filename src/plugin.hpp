@@ -10,3 +10,4 @@ extern Plugin* pluginInstance;
 // Declare each Model, defined in each module source file
 extern Model* modelLogQnt;
 extern Model* modelSqtQnt;
+extern Model* modelPowQnt;

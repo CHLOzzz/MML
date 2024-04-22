@@ -74,7 +74,7 @@ struct LogQntWidget : ModuleWidget {
 		// Create module & set panel
         setModule(module);
 		//setPanel(createPanel(asset::plugin(pluginInstance, "res/LOG_QNT.pdf"))); // Included with "helper.py" - doesn't work
-        setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/LOG_QNT_resized.svg")));
+        setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/LOG_QNT_v2.svg")));
 
         // Add screws to module - guessing just purely aesthetic
 		addChild(createWidget<ScrewSilver>(Vec(RACK_GRID_WIDTH, 0))); // Top Screw
@@ -83,10 +83,10 @@ struct LogQntWidget : ModuleWidget {
 		//addChild(createWidget<ScrewSilver>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
         // Add input voltage to module
-        addInput(createInput<PJ301MPort>(Vec(RACK_GRID_WIDTH-4, 270), module, LogQnt::INPUT));
+        addInput(createInput<PJ301MPort>(Vec(RACK_GRID_WIDTH-4.25, 271), module, LogQnt::INPUT));
 
         // Add output voltage to module
-        addOutput(createOutput<DarkPJ301MPort>(Vec(RACK_GRID_WIDTH-4, 320), module, LogQnt::OUTPUT));
+        addOutput(createOutput<DarkPJ301MPort>(Vec(RACK_GRID_WIDTH-4.25, 320), module, LogQnt::OUTPUT));
 	}
 };
 
