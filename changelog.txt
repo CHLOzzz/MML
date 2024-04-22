@@ -19,3 +19,5 @@ Planning to include another release along with the previous list:
 - ATN QNT
 - EQT QNT
 - POW 2 QNT
+
+- Changed meta information
