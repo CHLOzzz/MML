@@ -63,8 +63,4 @@ A huge thanks to the following who all contributed to the project (order from im
 - Andrew Sills: Researcher
 
 # Changelog
-**v2.0.1 -> v2.1.0:** Major release! The following has been changed for the public release:
-- **LOG QNT:** Updated graphics
-- **SQT QNT:** Updated graphics
-- **POW QNT:** Introduced
-- Updated meta information (authors, contact emails, GitHub as source)
+Full changelog provided in "changelog.txt".
