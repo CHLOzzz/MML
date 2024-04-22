@@ -6,3 +6,16 @@ Unofficial pre-release! 2 modules are provided in the plugin to get things runni
 - LOG QNT is the shape of the base 2 logarithm function.
 
 7 are planned for release total in future updates - SQT, LOG, SIN, LIN, ATN, EQT, and POW.
+
+---v2.1.0---
+Official release! 3 modules are provided in the plugin!
+
+- LOG QNT and SQT QNT got graphical updates
+- POW QNT was introduced
+
+Planning to include another release along with the previous list:
+- SIN QNT
+- LIN QNT
+- ATN QNT
+- EQT QNT
+- POW 2 QNT
