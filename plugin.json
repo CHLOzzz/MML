@@ -4,9 +4,9 @@
   "version": "2.1.0",
   "license": "GPL-3.0-or-later",
   "brand": "Mathematics and Music Lab (MML)",
-  "description": "Modules to produce different families of musical scales provided by Michigan Technological University's Mathematics and Music Lab.",
-  "author": "Cody McCarthy & Maxwell Schneider & Michael Maxwell & Josh Pfeffer & Robert Schneider & Andrew V. Sills",
-  "authorEmail": "cmccarth@mtu.edu & mmaxwell@mtu.edu & robertsc@mtu.edu & asills@georgiasouthern.edu",
+  "description": "Quantizers to produce different families of musical scales provided by Michigan Technological University's Mathematics and Music Lab (MML).",
+  "author": "Cody McCarthy & Maxwell Schneider & Michael G. Maxwell & Josh Pfeffer & Robert Schneider & Andrew V. Sills",
+  "authorEmail": "cmccarth@mtu.edu & mmaxwell@mtu.edu & robertsc@mtu.edu",
   "authorUrl": "",
   "pluginUrl": "",
   "manualUrl": "",
@@ -17,7 +17,7 @@
     {
       "slug": "LogQnt",
       "name": "Logarithmic Quantizer (LOG QNT)",
-      "description": "Quantizer that produces the non-Pythagorean musical scale of The Apples in Stereo, tuned to the logarithms of whole numbers.",
+      "description": "Quantizer to produce the non-Pythagorean musical scale of The Apples in Stereo, tuned to the logarithms of whole numbers.",
       "tags": [
         "Quantizer"
       ]
@@ -25,7 +25,7 @@
     {
       "slug": "SqtQnt",
       "name": "Square Root Quantizer (SQT QNT)",
-      "description": "Quantizer that produces a musical scale tuned to the square roots of whole numbers.",
+      "description": "Quantizer to produce a musical scale tuned to the square roots of whole numbers.",
       "tags": [
         "Quantizer"
       ]
@@ -33,7 +33,7 @@
     {
       "slug": "PowQnt",
       "name": "Power Quantizer (POW QNT)",
-      "description": "Quantizer that produces infinite families of musical scales at the turn of a knob, tuned to a special power function.",
+      "description": "Quantizer to produce infinite families of musical scales at the turn of a knob, tuned to a special power function.",
       "tags": [
         "Quantizer"
       ]
