@@ -74,7 +74,7 @@ struct LogQntWidget : ModuleWidget {
 		// Create module & set panel
         setModule(module);
 		//setPanel(createPanel(asset::plugin(pluginInstance, "res/LOG_QNT.pdf"))); // Included with "helper.py" - doesn't work
-        setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/LOG_QNT_v2.svg")));
+        setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/LOG_QNT.svg")));
 
         // Add screws to module - guessing just purely aesthetic
 		addChild(createWidget<ScrewSilver>(Vec(RACK_GRID_WIDTH, 0))); // Top Screw

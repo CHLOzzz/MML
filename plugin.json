@@ -1,35 +1,42 @@
 {
   "slug": "MML",
-  "name": "MML",
+  "name": "Mathematics and Music Lab (MML)",
   "version": "2.1.0",
   "license": "GPL-3.0-or-later",
-  "brand": "MML",
-  "author": "Cody McCarthy & Michael Maxwell & Max Schneider & Josh Pfeffer & Robert Schneider & Andrew Sills",
+  "brand": "Mathematics and Music Lab (MML)",
+  "description": "Modules to produce different families of musical scales provided by Michigan Technological University's Mathematics and Music Lab.",
+  "author": "Cody McCarthy & Maxwell Schneider & Michael Maxwell & Josh Pfeffer & Robert Schneider & Andrew V. Sills",
   "authorEmail": "cmccarth@mtu.edu & mmaxwell@mtu.edu & robertsc@mtu.edu & asills@georgiasouthern.edu",
   "authorUrl": "",
   "pluginUrl": "",
   "manualUrl": "",
   "sourceUrl": "https://github.com/CHLOzzz/MML/",
   "donateUrl": "",
-  "changelogUrl": "",
+  "changelogUrl": "https://github.com/CHLOzzz/MML/blob/main/changelog.txt",
   "modules": [
     {
       "slug": "LogQnt",
-      "name": "LOG QNT",
-      "description": "Quantize voltage on a base 2 logarithmic scale.",
-      "tags": []
+      "name": "Logarithmic Quantizer (LOG QNT)",
+      "description": "Quantizer that produces the non-Pythagorean musical scale of The Apples in Stereo, tuned to the logarithms of whole numbers.",
+      "tags": [
+        "Quantizer"
+      ]
     },
     {
       "slug": "SqtQnt",
-      "name": "SQT QNT",
-      "description": "Quantize voltage on a square root scale.",
-      "tags": []
+      "name": "Square Root Quantizer (SQT QNT)",
+      "description": "Quantizer that produces a musical scale tuned to the square roots of whole numbers.",
+      "tags": [
+        "Quantizer"
+      ]
     },
     {
       "slug": "PowQnt",
-      "name": "POW QNT",
-      "description": "Quantize voltage on a varying power scale.",
-      "tags": []
+      "name": "Power Quantizer (POW QNT)",
+      "description": "Quantizer that produces infinite families of musical scales at the turn of a knob, tuned to a special power function.",
+      "tags": [
+        "Quantizer"
+      ]
     }
   ]
 }
