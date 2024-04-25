@@ -2,7 +2,7 @@
 A collaborator with Michigan Technological University's Math and Music Lab seeking to develop new musical scales through voltage quantization with the software VCV Rack.
 
 # Official Release
-The MML plugin for VCV Rack 2 is now officially released! With the official release, we've added 
+The [Mathematics and Music Lab (MML)](https://library.vcvrack.com/MML) plugin for VCV Rack 2 is now officially released, and available from [VCV Library](https://library.vcvrack.com)!
 
 # Building from Source
 To build from source:
@@ -21,21 +21,21 @@ To build from source:
 # Quantizers
 Each quantizer presented is a voltage mapping inspired by Dr. Schneider's paper [A Non-Pythagorean Musical Scale Based on Logarithms](https://arxiv.org/abs/1312.5020) with an updated paper accompanying: [Mathematics of the MML functional quantizer modules for VCV Rack software synthesizer](https://arxiv.org/abs/2404.04739). Currently this project focuses on mapping chromatic scales (12-note) via voltage.
 
-Let $v$ denote the input voltage in Volts (V). Define $v _{f} = \lfloor v \rfloor$. Let $v _{o}$ be the voltage outputted by the quantizers. The mappings for all modules available in this plugin are as follows:
+Let $v$ denote the input voltage in Volts (V). Define $v _{f} = \lfloor v \rfloor$. Let $v _{o}$ be the voltage outputted by the quantizers. The mappings for all quantizers available in this plugin are as follows:
 
-- **Base 2 Logarithm Quantizer (LOG QNT):** Quantizer that produces the non-Pythagorean musical scale of [The Apples in Stereo](https://en.wikipedia.org/wiki/The_Apples_in_Stereo), tuned to the logarithms of whole numbers. 
+- **Base 2 Logarithm Quantizer (LOG QNT):** Quantizer to produce the non-Pythagorean musical scale of [The Apples in Stereo](https://en.wikipedia.org/wiki/The_Apples_in_Stereo), tuned to the logarithms of whole numbers. 
 
   $$v _{o} \left( v \ge 0 \right) = v _{f} - 1 + \log _{2} \left( \log _{2} \left( 4 + \lfloor 12 * \left( v - v _{f} \right) \rfloor \right) \right)$$
 
   $$v _{o} \left( v < 0 \right) = 0$$
 
-- **Square Root Quantizer (SQT QNT):** Quantizer that produces a musical scale tuned to the square roots of whole numbers.
+- **Square Root Quantizer (SQT QNT):** Quantizer to produce a musical scale tuned to the square roots of whole numbers.
 
   $$v _{o} \left( v \ge 0 \right) = v _{f} - 1 + \log _{2} \left( \sqrt{4 + \lfloor 12 * \left( v - v _{f} \right) \rfloor} \right)$$
 
   $$v _{o} \left( v < 0 \right) = 0$$
 
-- **Power Quantizer (POW QNT):** Quantizer that produces infinite families of musical scales at the turn of a knob, tuned to a special power function.
+- **Power Quantizer (POW QNT):** Quantizer to produce infinite families of musical scales at the turn of a knob, tuned to a special power function.
 
   Assume $p > 0$.
 
@@ -46,21 +46,21 @@ Let $v$ denote the input voltage in Volts (V). Define $v _{f} = \lfloor v \rfloo
 # Future Quantizers
 Because the mathematics behind the quantizers is well understood, we also propose the following quantizers in future releases:
 
-- **Power Quantizer 2 (POW QNT 2):** Quantizer that produces infinite families of musical scales at the turn of a knob, tuned to a similarly special power function compared to the original **POW QNT**.
+- **Power Quantizer 2 (POW QNT 2):** Quantizer to produce infinite families of musical scales at the turn of a knob, tuned to a similarly special power function compared to the original **POW QNT**.
 
-- **Sine Quantizer (SIN QNT):** Quantizer that produces a musical scale tuned to the sine function. 
+- **Sine Quantizer (SIN QNT):** Quantizer to produce a musical scale tuned to the sine function. 
 
-- **Arctangent Quantizer (ATN QNT):** Quantizer that produces a musical scale tuned to the arctangent function. 
+- **Arctangent Quantizer (ATN QNT):** Quantizer to produce a musical scale tuned to the arctangent function. 
 
 # Credit
 A huge thanks to the following who all contributed to the project (order from implementation to theorization):
 
 - Cody McCarthy: Lead Programmer
 - Max Schneider: Programming Consultant & Math Assistant
-- Michael Maxwell: Audio Synthesis Consultant
+- Michael G. Maxwell: Audio Synthesis Consultant
 - Joshua Pfeffer: Lead Artistic Designer
 - Robert Schneider: MML Founder & Researcher
-- Andrew Sills: Researcher
+- Andrew V. Sills: Researcher
 
 # Changelog
 Full changelog provided in "changelog.txt".
