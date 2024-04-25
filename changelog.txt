@@ -21,3 +21,4 @@ Planning to include another release along with the previous list:
 - POW 2 QNT
 
 - Changed meta information
+- Deleted unused assets
