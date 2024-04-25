@@ -23,19 +23,19 @@ Each quantizer presented is a voltage mapping inspired by Dr. Schneider's paper 
 
 Let $v$ denote the input voltage in Volts (V). Define $v _{f} = \lfloor v \rfloor$. Let $v _{o}$ be the voltage outputted by the quantizers. The mappings for all modules available in this plugin are as follows:
 
-- **Base 2 Logarithm Quantizer (LOG QNT):** Module to produce the non-Pythagorean musical scale of [The Apples in Stereo](https://en.wikipedia.org/wiki/The_Apples_in_Stereo), tuned to the logarithms of whole numbers. 
+- **Base 2 Logarithm Quantizer (LOG QNT):** Quantizer that produces the non-Pythagorean musical scale of [The Apples in Stereo](https://en.wikipedia.org/wiki/The_Apples_in_Stereo), tuned to the logarithms of whole numbers. 
 
   $$v _{o} \left( v \ge 0 \right) = v _{f} - 1 + \log _{2} \left( \log _{2} \left( 4 + \lfloor 12 * \left( v - v _{f} \right) \rfloor \right) \right)$$
 
   $$v _{o} \left( v < 0 \right) = 0$$
 
-- **Square Root Quantizer (SQT QNT):** Module to produce a musical scale tuned to the square roots of whole numbers.
+- **Square Root Quantizer (SQT QNT):** Quantizer that produces a musical scale tuned to the square roots of whole numbers.
 
   $$v _{o} \left( v \ge 0 \right) = v _{f} - 1 + \log _{2} \left( \sqrt{4 + \lfloor 12 * \left( v - v _{f} \right) \rfloor} \right)$$
 
   $$v _{o} \left( v < 0 \right) = 0$$
 
-- **Power Quantizer (POW QNT):** Module to produce infinite families of musical scales at the turn of a knob, tuned to a special power function.
+- **Power Quantizer (POW QNT):** Quantizer that produces infinite families of musical scales at the turn of a knob, tuned to a special power function.
 
   Assume $p > 0$.
 
@@ -46,18 +46,18 @@ Let $v$ denote the input voltage in Volts (V). Define $v _{f} = \lfloor v \rfloo
 # Future Quantizers
 Because the mathematics behind the quantizers is well understood, we also propose the following quantizers in future releases:
 
-- **Power Quantizer 2 (POW QNT 2):** Module to produce infinite families of musical scales at the turn of a knob, tuned to a similarly special power function compared to the original **POW QNT**.
+- **Power Quantizer 2 (POW QNT 2):** Quantizer that produces infinite families of musical scales at the turn of a knob, tuned to a similarly special power function compared to the original **POW QNT**.
 
-- **Sine Quantizer (SIN QNT):** Module to produce a musical scale tuned to the sine function. 
+- **Sine Quantizer (SIN QNT):** Quantizer that produces a musical scale tuned to the sine function. 
 
-- **Arctangent Quantizer (ATN QNT):** Module to produce a musical scale tuned to the arctangent function. 
+- **Arctangent Quantizer (ATN QNT):** Quantizer that produces a musical scale tuned to the arctangent function. 
 
 # Credit
 A huge thanks to the following who all contributed to the project (order from implementation to theorization):
 
 - Cody McCarthy: Lead Programmer
-- Michael Maxwell: Audio Synthesis Consultant
 - Max Schneider: Programming Consultant & Math Assistant
+- Michael Maxwell: Audio Synthesis Consultant
 - Joshua Pfeffer: Lead Artistic Designer
 - Robert Schneider: MML Founder & Researcher
 - Andrew Sills: Researcher
